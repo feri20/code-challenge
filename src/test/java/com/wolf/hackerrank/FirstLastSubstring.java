@@ -8,12 +8,12 @@ import java.util.List;
 
 
 @SpringBootTest
-class FirstLastSubstringTest {
+class FirstLastSubstring {
 
 
     @Test
     void firstLastSub(){
-        String input = "HelloMyNameisfrozen";
+        String input = "HhelloMyNameisfrozen";
         int number = 3;
         char[] inputChar = input.toCharArray();
         int pivot = partition(inputChar, 0, inputChar.length - 1);

@@ -8,7 +8,7 @@ import java.text.NumberFormat;
 import java.util.Locale;
 
 @SpringBootTest
-class CurrencyPrintTest {
+class CurrencyPrint{
     @Test
     void printCurrencies(){
         double amount = 1234.123;

@@ -5,10 +5,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 @SpringBootTest
-class AnagramStringTest {
+class AnagramString {
 
 
     @Test
