@@ -1,13 +1,12 @@
 package com.wolf.hackerrank;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-@SpringBootTest
+
 class CurrencyPrint{
     @Test
     void printCurrencies(){
