@@ -6,3 +6,5 @@ select city from station where city not REGEXP '^[aeiouAEIOU].*[aeiouAEIOU]$';/*
 select name from students where marks>75 order by substring(name,-3) ; /*order result based on last three character */
 select name from students where marks>75 order by substring(name,3),id ; /*order result based on first three character
                                                                            and if there is two words the same sort then based on id */
+select name from employee order by name ASC ; /* return names ordered alphabetically */
+select count(*) from city where population >100000  /* return cities number with population more than 100000*/
