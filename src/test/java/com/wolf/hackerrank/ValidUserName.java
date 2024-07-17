@@ -11,7 +11,7 @@ public class ValidUserName {
         String userName = "_julia456123";
         if(userName.length()<8|userName.length()>30){
             System.out.println("Invalid");
-        }else if (!Pattern.matches("^[a)-zA-Z][a-zA-Z0-9_]*$",userName)){
+        }else if (!Pattern.matches("^[a-zA-Z][a-zA-Z0-9_]*$",userName)){
             System.out.println("Valid");
         }
     }
