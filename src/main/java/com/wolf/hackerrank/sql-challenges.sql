@@ -14,3 +14,9 @@ select case when A=B and B=C then 'Equilateral'
             when A!=B and A!=C and B!=C and A+B>C and A+C>B and B+C>A then 'Scalene'
             else 'Not A Triangle'
             end as triangle_type from TRIANGLES ;/*return triangle type based on 3 input*/
+
+/* use concat - lower - substring*/
+select concat(name,concat('(',substring(occupation,1,1),')')) from occupations order by name ASC ;
+select concat('There are a total of ',count( occupation))
+    as frequency,lower(concat(occupation,'s.')) from occupations
+       group by occupation order by  frequency, occupation ASC;
