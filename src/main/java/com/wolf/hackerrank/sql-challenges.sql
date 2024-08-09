@@ -1,4 +1,4 @@
-delete from demo where id not in(select id from demo group by name having count(name)>1);
+DELETE from demo where name in (select name from demo GROUP by name HAVING count(name)>1) and id not in (select id from demo GROUP by name HAVING count(name)>1);
 select (select count(city) from station)-(select count(distinct city) from station) as difference;/* minus in sql */
 select city , length(city) as number from station where length(city) = (select min(length(city)) from station) order by city ASC limit 1;
 select city from station where city like 'i%' or city like 'u%' or city like 'e%' or city like 'a%' or city like 'o%';
