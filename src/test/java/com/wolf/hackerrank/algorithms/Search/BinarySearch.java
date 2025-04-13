@@ -15,7 +15,7 @@ class BinarySearch {
         int low = 0 ;
         int high = arr.length - 1;
         while (low <= high) {
-            int mid = low + (high - low) / 2;
+            int mid = low + (high - low) / 2; // solution for Integer Overflow Protection
             if (target > arr[mid]) {
                 low = mid + 1;
             } else if (target < arr[mid]) {
