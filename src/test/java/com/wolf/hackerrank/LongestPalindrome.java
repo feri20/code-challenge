@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class LongestPalindrome {
 
     @Test
-    void palindromFinder() {
+    void palindromeFinder() {
         String input = "abaxyzzyxf";
         int start = 0, end = 0;
         for (int i = 0; i < input.length(); i++) {
